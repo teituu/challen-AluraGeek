@@ -1,0 +1,279 @@
+body{
+    background-color: darkmagenta;
+}
+
+.titulo_primcipal{
+    margin: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.contenedor_agregar{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.boton_agregar{
+    font-size: medium;
+    background: darkviolet;
+    color: azure;
+    box-shadow: 14px 11px 21px 10px black;
+}
+
+.boton_agregar:hover{
+    cursor: pointer;
+    background-color: violet;
+    color: black;
+}
+
+.titulo_2 {
+    display: flex;
+    margin-bottom: 8px;
+    justify-content: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+/* Seção "Meus Produtos" */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.produtos-container  {  
+    max-width: 100%;
+    display: flex;
+}
+
+.card {
+    background: darkviolet;
+    color: #ffffff;
+    width: 196px;
+    height: 258px;
+    border-radius: 10px;
+    gap: 10px;
+    border: 2px solid #000;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 17px 17px 18px 1px black;
+}
+
+.card:hover {
+    background-color: #6591e9;
+    color: #ffffff;
+}
+
+
+.card p {
+    margin: 10px 10px;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    border: 2px;
+    gap: 8px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+}
+
+.meus-produtos {
+    align-items: center;
+    text-align: center;
+}
+
+.produtos {
+    display: grid;
+    width: 678px;
+    height: auto;
+    border-radius: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 0px;
+    padding: 20px;
+    overflow: auto;
+    gap: 25px;
+    padding-top: 40px;
+    box-shadow: 16px 22px 20px 7px black;
+}
+
+.produtos img {
+    align-items: center;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card-container--value img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bote_basura {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.bote_basura:hover {
+    background-color: #e50b36;
+    color: white;
+}
+
+/* Seção "Adicionar Produtos" */
+input {
+    color: darkviolet;
+    border-radius: 50px;
+    width: 392px;
+    height: 58px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+button {
+    color: darkviolet;
+    font-size: 20px;
+    font-weight: 500;
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: darkviolet;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+.input-group ::placeholder,
+.button-group ::placeholder,
+#file-upload-button {
+    color: darkviolet;
+    
+}
+
+.adicionar-produtos {
+    padding-left: 50px;
+}
+
+.guardar {
+    background-color: darkviolet;
+    color: #fff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.guardar:hover {
+    background-color: #ffffff;
+    color:  black;
+    border: 2px solid black;
+}
+
+.limpar {
+    background-color: darkviolet;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.limpar:hover{
+    background-color: #ffffff;
+    color:  black;
+    border: 2px solid black;
+}
+
+#form-produto {
+    align-items: center;
+    max-width: 400px;
+    margin-top: 15px;
+}
+
+#form-produto button {
+    margin-top: 15px;
+}
+
+.footer{
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) and (max-width: 920px) {
+    .container {
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 16px;
+        text-align: center;
+
+    }
+
+    #form-produto {
+        padding-bottom: 10px;
+        width: Fixed (430px) px;
+        height: 517px;
+        padding: 40px 0px 0px 0px;
+        gap: 40px;
+        opacity: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width:  90vw;
+    }
+
+    #form-produto {
+        display: block;
+        padding-bottom: 50px;
+        width: 100%;
+        margin: 20px;
+
+        text-align: center;
+    }
+}
+
+.footer{
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+}

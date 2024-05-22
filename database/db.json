@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "id": "2",
+      "imagen": "img/mando.png",
+      "name": "Mando de consola",
+      "url": "",
+      "precio": 60
+    },
+    {
+      "id": "3",
+      "imagen": "img/reloj.png",
+      "name": "Reloj",
+      "url": "",
+      "precio": 80
+    },
+    {
+      "id": "4",
+      "imagen": "img/yoda_PNG18.png",
+      "name": "Yoda",
+      "url": "",
+      "precio": 60
+    },
+    {
+      "id": "5",
+      "imagen": "img/yoda_PNG18.png",
+      "name": "Yoda Original",
+      "url": "",
+      "precio": 120
+    },
+    {
+      "id": "6",
+      "imagen": "img/buzz.jpg",
+      "name": "Buzz Original",
+      "url": "",
+      "precio": 40
+    },
+    {
+      "id": "7",
+      "imagen": "img/yoda_PNG18.png",
+      "name": "Yoda",
+      "url": "",
+      "precio": 60
+    }
+  ]
+}

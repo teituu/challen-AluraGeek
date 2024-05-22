@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <title>SE VENDE &#128512</title>
+</head>
+<body>
+    <header class="titulo_primcipal">
+        <a href="index.html" style="text-decoration: none;"><h1>🎮Alura Geek</h1></a>
+    </header>
+    <main style="display: flex; justify-content: center;">
+        <section>
+            <form id="form-produto" data-form enctype="multipart/form-data">
+                <div class="input-group">
+                    <input data-name type="text" id="name" name="name" placeholder="NOMBRE DEL PRODUTO" required>
+                    <input data-precio type="number" id="precio" name="precio" placeholder="PRECIO DE VENTA" required>
+                    <input data-image type="file" id="imagen" name="imagen" placeholder="IMAGEN" required>
+                </div>
+                <div class="button-group">
+                    <button class="guardar" type="submit">Guardar</button>
+                    <button class="limpar" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 style="color: azure;">🎮Alura Geek</h3><br>
+        <span style="color: azure;"> &copy; Eduardo Perez</span>
+        <br>
+        <span style="color: azure;">ALURA LATAM 2024</span>
+    </footer>
+    <script type="module" src="java/controllers/main.js"></script>
+</body>
+</html>
